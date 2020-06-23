@@ -3,16 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540D57AA249A380000FB511A /* ECRootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57A9249A380000FB511A /* ECRootTabBarController.swift */; };
+		540D57AB249A380000FB511A /* ECRootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57A9249A380000FB511A /* ECRootTabBarController.swift */; };
+		540D57AC249A380000FB511A /* ECRootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57A9249A380000FB511A /* ECRootTabBarController.swift */; };
+		540D57B2249A38FB00FB511A /* ECHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57B1249A38FB00FB511A /* ECHomeViewController.swift */; };
+		540D57B3249A38FB00FB511A /* ECHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57B1249A38FB00FB511A /* ECHomeViewController.swift */; };
+		540D57B4249A38FB00FB511A /* ECHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57B1249A38FB00FB511A /* ECHomeViewController.swift */; };
+		540D57B6249A390E00FB511A /* ECCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57B5249A390E00FB511A /* ECCategoryViewController.swift */; };
+		540D57B7249A390E00FB511A /* ECCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57B5249A390E00FB511A /* ECCategoryViewController.swift */; };
+		540D57B8249A390E00FB511A /* ECCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57B5249A390E00FB511A /* ECCategoryViewController.swift */; };
+		540D57BA249A393500FB511A /* ECBookshelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57B9249A393500FB511A /* ECBookshelfViewController.swift */; };
+		540D57BB249A393500FB511A /* ECBookshelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57B9249A393500FB511A /* ECBookshelfViewController.swift */; };
+		540D57BC249A393500FB511A /* ECBookshelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57B9249A393500FB511A /* ECBookshelfViewController.swift */; };
+		540D57BE249A395200FB511A /* ECMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57BD249A395200FB511A /* ECMineViewController.swift */; };
+		540D57BF249A395200FB511A /* ECMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57BD249A395200FB511A /* ECMineViewController.swift */; };
+		540D57C0249A395200FB511A /* ECMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57BD249A395200FB511A /* ECMineViewController.swift */; };
 		542A56732493A59800657661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542A56722493A59800657661 /* AppDelegate.swift */; };
-		542A56772493A59800657661 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542A56762493A59800657661 /* ViewController.swift */; };
 		542A567C2493A59B00657661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542A567B2493A59B00657661 /* Assets.xcassets */; };
 		542A567F2493A59B00657661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542A567D2493A59B00657661 /* LaunchScreen.storyboard */; };
 		542A568A2493A59B00657661 /* EvilCartoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542A56892493A59B00657661 /* EvilCartoonTests.swift */; };
 		542A56952493A59B00657661 /* EvilCartoonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542A56942493A59B00657661 /* EvilCartoonUITests.swift */; };
+		542BF28524A0CEF500C75FD1 /* ECRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BF28424A0CEF500C75FD1 /* ECRootViewController.swift */; };
+		542BF28624A0CEF500C75FD1 /* ECRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BF28424A0CEF500C75FD1 /* ECRootViewController.swift */; };
+		542BF28724A0CEF500C75FD1 /* ECRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BF28424A0CEF500C75FD1 /* ECRootViewController.swift */; };
+		5AC0553BFA2F2631034C299C /* Pods_EvilCartoon_EvilCartoonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37211A7579DE7775CCE601A8 /* Pods_EvilCartoon_EvilCartoonUITests.framework */; };
+		73DB277853C61D266FFABF12 /* Pods_EvilCartoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A920D557EEE7FD9655DCB7 /* Pods_EvilCartoon.framework */; };
+		EC779ACC3DAAC1F31B619238 /* Pods_EvilCartoonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924B4DA928F5119A018BB0FF /* Pods_EvilCartoonTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +53,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14BEDE5017F68D67AB5D1413 /* Pods-EvilCartoonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvilCartoonTests.release.xcconfig"; path = "Target Support Files/Pods-EvilCartoonTests/Pods-EvilCartoonTests.release.xcconfig"; sourceTree = "<group>"; };
+		37211A7579DE7775CCE601A8 /* Pods_EvilCartoon_EvilCartoonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvilCartoon_EvilCartoonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1D5C0BE402D76706920D90 /* Pods-EvilCartoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvilCartoon.debug.xcconfig"; path = "Target Support Files/Pods-EvilCartoon/Pods-EvilCartoon.debug.xcconfig"; sourceTree = "<group>"; };
+		41A6965028398C25916CD3BD /* Pods-EvilCartoonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvilCartoonTests.debug.xcconfig"; path = "Target Support Files/Pods-EvilCartoonTests/Pods-EvilCartoonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		47CEB2BD4EF505990BB983D2 /* Pods-EvilCartoon-EvilCartoonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvilCartoon-EvilCartoonUITests.release.xcconfig"; path = "Target Support Files/Pods-EvilCartoon-EvilCartoonUITests/Pods-EvilCartoon-EvilCartoonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		540D57A9249A380000FB511A /* ECRootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECRootTabBarController.swift; sourceTree = "<group>"; };
+		540D57B1249A38FB00FB511A /* ECHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECHomeViewController.swift; sourceTree = "<group>"; };
+		540D57B5249A390E00FB511A /* ECCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECCategoryViewController.swift; sourceTree = "<group>"; };
+		540D57B9249A393500FB511A /* ECBookshelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECBookshelfViewController.swift; sourceTree = "<group>"; };
+		540D57BD249A395200FB511A /* ECMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECMineViewController.swift; sourceTree = "<group>"; };
 		542A566F2493A59800657661 /* EvilCartoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvilCartoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		542A56722493A59800657661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		542A56762493A59800657661 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		542A567B2493A59B00657661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542A567E2493A59B00657661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542A56802493A59B00657661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +74,11 @@
 		542A56902493A59B00657661 /* EvilCartoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvilCartoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		542A56942493A59B00657661 /* EvilCartoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvilCartoonUITests.swift; sourceTree = "<group>"; };
 		542A56962493A59C00657661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		542BF28424A0CEF500C75FD1 /* ECRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECRootViewController.swift; sourceTree = "<group>"; };
+		5871D2BDF20FA53A5E8A22CC /* Pods-EvilCartoon-EvilCartoonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvilCartoon-EvilCartoonUITests.debug.xcconfig"; path = "Target Support Files/Pods-EvilCartoon-EvilCartoonUITests/Pods-EvilCartoon-EvilCartoonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		91576F3DCA6CF4C7851DA19C /* Pods-EvilCartoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvilCartoon.release.xcconfig"; path = "Target Support Files/Pods-EvilCartoon/Pods-EvilCartoon.release.xcconfig"; sourceTree = "<group>"; };
+		924B4DA928F5119A018BB0FF /* Pods_EvilCartoonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvilCartoonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A920D557EEE7FD9655DCB7 /* Pods_EvilCartoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvilCartoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DB277853C61D266FFABF12 /* Pods_EvilCartoon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC779ACC3DAAC1F31B619238 /* Pods_EvilCartoonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +102,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC0553BFA2F2631034C299C /* Pods_EvilCartoon_EvilCartoonUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37A08CA29EA36064864E0631 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9A920D557EEE7FD9655DCB7 /* Pods_EvilCartoon.framework */,
+				37211A7579DE7775CCE601A8 /* Pods_EvilCartoon_EvilCartoonUITests.framework */,
+				924B4DA928F5119A018BB0FF /* Pods_EvilCartoonTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		540D57A8249A37AB00FB511A /* RootController */ = {
+			isa = PBXGroup;
+			children = (
+				540D57A9249A380000FB511A /* ECRootTabBarController.swift */,
+				542BF28424A0CEF500C75FD1 /* ECRootViewController.swift */,
+			);
+			path = RootController;
+			sourceTree = "<group>";
+		};
+		540D57AD249A383000FB511A /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				540D57BD249A395200FB511A /* ECMineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		540D57AE249A383500FB511A /* Bookshelf */ = {
+			isa = PBXGroup;
+			children = (
+				540D57B9249A393500FB511A /* ECBookshelfViewController.swift */,
+			);
+			path = Bookshelf;
+			sourceTree = "<group>";
+		};
+		540D57AF249A384800FB511A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				540D57B5249A390E00FB511A /* ECCategoryViewController.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		540D57B0249A384D00FB511A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				542BF28C24A0D03C00C75FD1 /* RootHome */,
+				542BF28D24A0D05200C75FD1 /* Recommend */,
+				542BF29224A0D08500C75FD1 /* VIP */,
+				542BF29724A0D0B400C75FD1 /* Subscribe */,
+				542BF29C24A0D10E00C75FD1 /* Ranking */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		542A56662493A59800657661 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +171,8 @@
 				542A56882493A59B00657661 /* EvilCartoonTests */,
 				542A56932493A59B00657661 /* EvilCartoonUITests */,
 				542A56702493A59800657661 /* Products */,
+				640B817CB3955088FBE8562B /* Pods */,
+				37A08CA29EA36064864E0631 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,8 +189,12 @@
 		542A56712493A59800657661 /* EvilCartoon */ = {
 			isa = PBXGroup;
 			children = (
+				540D57B0249A384D00FB511A /* Home */,
+				540D57AF249A384800FB511A /* Category */,
+				540D57AE249A383500FB511A /* Bookshelf */,
+				540D57AD249A383000FB511A /* Mine */,
+				540D57A8249A37AB00FB511A /* RootController */,
 				542A56722493A59800657661 /* AppDelegate.swift */,
-				542A56762493A59800657661 /* ViewController.swift */,
 				542A567B2493A59B00657661 /* Assets.xcassets */,
 				542A567D2493A59B00657661 /* LaunchScreen.storyboard */,
 				542A56802493A59B00657661 /* Info.plist */,
@@ -122,6 +220,215 @@
 			path = EvilCartoonUITests;
 			sourceTree = "<group>";
 		};
+		542BF28824A0CF6C00C75FD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		542BF28924A0CF7700C75FD1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		542BF28A24A0CF7F00C75FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		542BF28B24A0CF8700C75FD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				540D57B1249A38FB00FB511A /* ECHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		542BF28C24A0D03C00C75FD1 /* RootHome */ = {
+			isa = PBXGroup;
+			children = (
+				542BF28824A0CF6C00C75FD1 /* Model */,
+				542BF28924A0CF7700C75FD1 /* ViewModel */,
+				542BF28A24A0CF7F00C75FD1 /* View */,
+				542BF28B24A0CF8700C75FD1 /* Controller */,
+			);
+			path = RootHome;
+			sourceTree = "<group>";
+		};
+		542BF28D24A0D05200C75FD1 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				542BF29124A0D07700C75FD1 /* Controller */,
+				542BF29024A0D07000C75FD1 /* ViewModel */,
+				542BF28F24A0D06C00C75FD1 /* View */,
+				542BF28E24A0D06400C75FD1 /* Model */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		542BF28E24A0D06400C75FD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		542BF28F24A0D06C00C75FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		542BF29024A0D07000C75FD1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		542BF29124A0D07700C75FD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		542BF29224A0D08500C75FD1 /* VIP */ = {
+			isa = PBXGroup;
+			children = (
+				542BF29624A0D0AE00C75FD1 /* Controller */,
+				542BF29524A0D0A700C75FD1 /* ViewModel */,
+				542BF29424A0D0A200C75FD1 /* View */,
+				542BF29324A0D09B00C75FD1 /* Model */,
+			);
+			path = VIP;
+			sourceTree = "<group>";
+		};
+		542BF29324A0D09B00C75FD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		542BF29424A0D0A200C75FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		542BF29524A0D0A700C75FD1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		542BF29624A0D0AE00C75FD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		542BF29724A0D0B400C75FD1 /* Subscribe */ = {
+			isa = PBXGroup;
+			children = (
+				542BF29B24A0D10800C75FD1 /* Controller */,
+				542BF29A24A0D0FC00C75FD1 /* ViewModel */,
+				542BF29924A0D0F800C75FD1 /* View */,
+				542BF29824A0D0F100C75FD1 /* Model */,
+			);
+			path = Subscribe;
+			sourceTree = "<group>";
+		};
+		542BF29824A0D0F100C75FD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		542BF29924A0D0F800C75FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		542BF29A24A0D0FC00C75FD1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		542BF29B24A0D10800C75FD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		542BF29C24A0D10E00C75FD1 /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+				542BF2A024A0D15500C75FD1 /* Controller */,
+				542BF29F24A0D15000C75FD1 /* View */,
+				542BF29E24A0D14A00C75FD1 /* ViewModel */,
+				542BF29D24A0D14400C75FD1 /* Model */,
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
+		542BF29D24A0D14400C75FD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		542BF29E24A0D14A00C75FD1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		542BF29F24A0D15000C75FD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		542BF2A024A0D15500C75FD1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		640B817CB3955088FBE8562B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F1D5C0BE402D76706920D90 /* Pods-EvilCartoon.debug.xcconfig */,
+				91576F3DCA6CF4C7851DA19C /* Pods-EvilCartoon.release.xcconfig */,
+				5871D2BDF20FA53A5E8A22CC /* Pods-EvilCartoon-EvilCartoonUITests.debug.xcconfig */,
+				47CEB2BD4EF505990BB983D2 /* Pods-EvilCartoon-EvilCartoonUITests.release.xcconfig */,
+				41A6965028398C25916CD3BD /* Pods-EvilCartoonTests.debug.xcconfig */,
+				14BEDE5017F68D67AB5D1413 /* Pods-EvilCartoonTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +436,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 542A56992493A59C00657661 /* Build configuration list for PBXNativeTarget "EvilCartoon" */;
 			buildPhases = (
+				EEF75C0C794727547A050649 /* [CP] Check Pods Manifest.lock */,
 				542A566B2493A59800657661 /* Sources */,
 				542A566C2493A59800657661 /* Frameworks */,
 				542A566D2493A59800657661 /* Resources */,
+				22C328CF5A473D074C7B65D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +455,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 542A569C2493A59C00657661 /* Build configuration list for PBXNativeTarget "EvilCartoonTests" */;
 			buildPhases = (
+				20E713678F0AD6DC26503FF7 /* [CP] Check Pods Manifest.lock */,
 				542A56812493A59B00657661 /* Sources */,
 				542A56822493A59B00657661 /* Frameworks */,
 				542A56832493A59B00657661 /* Resources */,
@@ -164,9 +474,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 542A569F2493A59C00657661 /* Build configuration list for PBXNativeTarget "EvilCartoonUITests" */;
 			buildPhases = (
+				8312BA70141F061FAE8781E2 /* [CP] Check Pods Manifest.lock */,
 				542A568C2493A59B00657661 /* Sources */,
 				542A568D2493A59B00657661 /* Frameworks */,
 				542A568E2493A59B00657661 /* Resources */,
+				315C29C553EE131933D42A23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,13 +559,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20E713678F0AD6DC26503FF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EvilCartoonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22C328CF5A473D074C7B65D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EvilCartoon/Pods-EvilCartoon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EvilCartoon/Pods-EvilCartoon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EvilCartoon/Pods-EvilCartoon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		315C29C553EE131933D42A23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EvilCartoon-EvilCartoonUITests/Pods-EvilCartoon-EvilCartoonUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EvilCartoon-EvilCartoonUITests/Pods-EvilCartoon-EvilCartoonUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EvilCartoon-EvilCartoonUITests/Pods-EvilCartoon-EvilCartoonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8312BA70141F061FAE8781E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EvilCartoon-EvilCartoonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEF75C0C794727547A050649 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EvilCartoon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		542A566B2493A59800657661 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				542A56772493A59800657661 /* ViewController.swift in Sources */,
+				540D57AA249A380000FB511A /* ECRootTabBarController.swift in Sources */,
+				540D57B2249A38FB00FB511A /* ECHomeViewController.swift in Sources */,
+				540D57BA249A393500FB511A /* ECBookshelfViewController.swift in Sources */,
 				542A56732493A59800657661 /* AppDelegate.swift in Sources */,
+				542BF28524A0CEF500C75FD1 /* ECRootViewController.swift in Sources */,
+				540D57B6249A390E00FB511A /* ECCategoryViewController.swift in Sources */,
+				540D57BE249A395200FB511A /* ECMineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +682,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				542A568A2493A59B00657661 /* EvilCartoonTests.swift in Sources */,
+				540D57BB249A393500FB511A /* ECBookshelfViewController.swift in Sources */,
+				540D57B3249A38FB00FB511A /* ECHomeViewController.swift in Sources */,
+				540D57B7249A390E00FB511A /* ECCategoryViewController.swift in Sources */,
+				542BF28624A0CEF500C75FD1 /* ECRootViewController.swift in Sources */,
+				540D57AB249A380000FB511A /* ECRootTabBarController.swift in Sources */,
+				540D57BF249A395200FB511A /* ECMineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +696,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				542A56952493A59B00657661 /* EvilCartoonUITests.swift in Sources */,
+				540D57BC249A393500FB511A /* ECBookshelfViewController.swift in Sources */,
+				540D57B4249A38FB00FB511A /* ECHomeViewController.swift in Sources */,
+				540D57B8249A390E00FB511A /* ECCategoryViewController.swift in Sources */,
+				542BF28724A0CEF500C75FD1 /* ECRootViewController.swift in Sources */,
+				540D57AC249A380000FB511A /* ECRootTabBarController.swift in Sources */,
+				540D57C0249A395200FB511A /* ECMineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,11 +848,13 @@
 		};
 		542A569A2493A59C00657661 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F1D5C0BE402D76706920D90 /* Pods-EvilCartoon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9667A46C8L;
 				INFOPLIST_FILE = EvilCartoon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,11 +868,13 @@
 		};
 		542A569B2493A59C00657661 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91576F3DCA6CF4C7851DA19C /* Pods-EvilCartoon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9667A46C8L;
 				INFOPLIST_FILE = EvilCartoon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +888,7 @@
 		};
 		542A569D2493A59C00657661 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A6965028398C25916CD3BD /* Pods-EvilCartoonTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -474,6 +911,7 @@
 		};
 		542A569E2493A59C00657661 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14BEDE5017F68D67AB5D1413 /* Pods-EvilCartoonTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +934,7 @@
 		};
 		542A56A02493A59C00657661 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5871D2BDF20FA53A5E8A22CC /* Pods-EvilCartoon-EvilCartoonUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -516,6 +955,7 @@
 		};
 		542A56A12493A59C00657661 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47CEB2BD4EF505990BB983D2 /* Pods-EvilCartoon-EvilCartoonUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

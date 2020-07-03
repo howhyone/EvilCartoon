@@ -22,6 +22,9 @@
 		540D57BE249A395200FB511A /* ECMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57BD249A395200FB511A /* ECMineViewController.swift */; };
 		540D57BF249A395200FB511A /* ECMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57BD249A395200FB511A /* ECMineViewController.swift */; };
 		540D57C0249A395200FB511A /* ECMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540D57BD249A395200FB511A /* ECMineViewController.swift */; };
+		5418966624AB5E38007F19C5 /* ECRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5418966524AB5E38007F19C5 /* ECRecommendViewController.swift */; };
+		5418966724AB5E38007F19C5 /* ECRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5418966524AB5E38007F19C5 /* ECRecommendViewController.swift */; };
+		5418966824AB5E38007F19C5 /* ECRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5418966524AB5E38007F19C5 /* ECRecommendViewController.swift */; };
 		542A56732493A59800657661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542A56722493A59800657661 /* AppDelegate.swift */; };
 		542A567C2493A59B00657661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542A567B2493A59B00657661 /* Assets.xcassets */; };
 		542A567F2493A59B00657661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542A567D2493A59B00657661 /* LaunchScreen.storyboard */; };
@@ -63,6 +66,7 @@
 		540D57B5249A390E00FB511A /* ECCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECCategoryViewController.swift; sourceTree = "<group>"; };
 		540D57B9249A393500FB511A /* ECBookshelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECBookshelfViewController.swift; sourceTree = "<group>"; };
 		540D57BD249A395200FB511A /* ECMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECMineViewController.swift; sourceTree = "<group>"; };
+		5418966524AB5E38007F19C5 /* ECRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECRecommendViewController.swift; sourceTree = "<group>"; };
 		542A566F2493A59800657661 /* EvilCartoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvilCartoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		542A56722493A59800657661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		542A567B2493A59B00657661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 		542A56942493A59B00657661 /* EvilCartoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvilCartoonUITests.swift; sourceTree = "<group>"; };
 		542A56962493A59C00657661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		542BF28424A0CEF500C75FD1 /* ECRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECRootViewController.swift; sourceTree = "<group>"; };
+		54B0EFCC24AF4ECD00771D98 /* EvilCartoon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EvilCartoon-Bridging-Header.h"; sourceTree = "<group>"; };
 		5871D2BDF20FA53A5E8A22CC /* Pods-EvilCartoon-EvilCartoonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvilCartoon-EvilCartoonUITests.debug.xcconfig"; path = "Target Support Files/Pods-EvilCartoon-EvilCartoonUITests/Pods-EvilCartoon-EvilCartoonUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		91576F3DCA6CF4C7851DA19C /* Pods-EvilCartoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvilCartoon.release.xcconfig"; path = "Target Support Files/Pods-EvilCartoon/Pods-EvilCartoon.release.xcconfig"; sourceTree = "<group>"; };
 		924B4DA928F5119A018BB0FF /* Pods_EvilCartoonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvilCartoonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +194,7 @@
 		542A56712493A59800657661 /* EvilCartoon */ = {
 			isa = PBXGroup;
 			children = (
+				54B0EFCA24AF4CAF00771D98 /* Utils */,
 				540D57B0249A384D00FB511A /* Home */,
 				540D57AF249A384800FB511A /* Category */,
 				540D57AE249A383500FB511A /* Bookshelf */,
@@ -295,6 +301,7 @@
 		542BF29124A0D07700C75FD1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5418966524AB5E38007F19C5 /* ECRecommendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -414,6 +421,14 @@
 			children = (
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		54B0EFCA24AF4CAF00771D98 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				54B0EFCC24AF4ECD00771D98 /* EvilCartoon-Bridging-Header.h */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		640B817CB3955088FBE8562B /* Pods */ = {
@@ -670,6 +685,7 @@
 				540D57AA249A380000FB511A /* ECRootTabBarController.swift in Sources */,
 				540D57B2249A38FB00FB511A /* ECHomeViewController.swift in Sources */,
 				540D57BA249A393500FB511A /* ECBookshelfViewController.swift in Sources */,
+				5418966624AB5E38007F19C5 /* ECRecommendViewController.swift in Sources */,
 				542A56732493A59800657661 /* AppDelegate.swift in Sources */,
 				542BF28524A0CEF500C75FD1 /* ECRootViewController.swift in Sources */,
 				540D57B6249A390E00FB511A /* ECCategoryViewController.swift in Sources */,
@@ -684,6 +700,7 @@
 				542A568A2493A59B00657661 /* EvilCartoonTests.swift in Sources */,
 				540D57BB249A393500FB511A /* ECBookshelfViewController.swift in Sources */,
 				540D57B3249A38FB00FB511A /* ECHomeViewController.swift in Sources */,
+				5418966724AB5E38007F19C5 /* ECRecommendViewController.swift in Sources */,
 				540D57B7249A390E00FB511A /* ECCategoryViewController.swift in Sources */,
 				542BF28624A0CEF500C75FD1 /* ECRootViewController.swift in Sources */,
 				540D57AB249A380000FB511A /* ECRootTabBarController.swift in Sources */,
@@ -698,6 +715,7 @@
 				542A56952493A59B00657661 /* EvilCartoonUITests.swift in Sources */,
 				540D57BC249A393500FB511A /* ECBookshelfViewController.swift in Sources */,
 				540D57B4249A38FB00FB511A /* ECHomeViewController.swift in Sources */,
+				5418966824AB5E38007F19C5 /* ECRecommendViewController.swift in Sources */,
 				540D57B8249A390E00FB511A /* ECCategoryViewController.swift in Sources */,
 				542BF28724A0CEF500C75FD1 /* ECRootViewController.swift in Sources */,
 				540D57AC249A380000FB511A /* ECRootTabBarController.swift in Sources */,
@@ -861,6 +879,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.howhyone.EvilCartoon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/EvilCartoon/Utils/EvilCartoon-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -881,6 +900,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.howhyone.EvilCartoon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/EvilCartoon/Utils/EvilCartoon-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

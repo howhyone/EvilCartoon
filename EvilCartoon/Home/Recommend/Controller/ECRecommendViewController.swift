@@ -8,10 +8,18 @@
 
 import UIKit
 import JXPagingView
+import LLCycleScrollView
 
 class ECRecommendViewController: ECRootViewController {
     var listViewDidScrollCallback: ((UIScrollView) -> ())?
 
+    private lazy var bannerView: LLCycleScrollView = {
+        let bw = LLCycleScrollView()
+        bw.backgroundColor = UIColor.white
+        bw.autoScrollTimeInterval = 6;
+        
+        return bw;
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
 

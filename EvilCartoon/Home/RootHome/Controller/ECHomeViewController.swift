@@ -15,9 +15,12 @@ extension JXPagingListContainerView: JXSegmentedViewListContainer{}
 
 class ECHomeViewController: ECRootViewController {
 
+    public let pinHeaderHeight: Int = 100
+
     lazy var pagingView: JXPagingView = preferredPagingView()
     lazy var dataSource: JXSegmentedTitleDataSource = JXSegmentedTitleDataSource()
-    lazy var segmentedView: JXSegmentedView = JXSegmentedView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: CGFloat(50)))
+    lazy var segmentedView: JXSegmentedView = JXSegmentedView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width - 120, height: CGFloat(40)))
+    lazy var backgroundView: UIView = UIView.init()
     var titleArr = ["推荐", "VIP", "订阅", "排行"];
     let headerHeigth: Int = 50;
     
@@ -40,25 +43,30 @@ class ECHomeViewController: ECRootViewController {
 
         pagingView.snp.makeConstraints { (make) in
             if #available(iOS 11.0, *) {
-                make.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin)
                 make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottomMargin);
             } else  {
-                make.top.equalToSuperview()
                 make.bottom.equalToSuperview()
             }
+            make.top.equalToSuperview()
             make.leading.trailing.equalToSuperview()
         }
     }
     
     func setupView() {
         self.view.backgroundColor = .white
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_search"), style: .plain, target: self, action: #selector(selectAction))
         dataSource.titles = titleArr
         dataSource.titleSelectedColor = UIColor.white
-        dataSource.titleNormalColor = UIColor.init(white: 1, alpha: 0.3)
-        segmentedView.backgroundColor = UIColor.green
+        dataSource.titleNormalColor = UIColor.init(white: 1, alpha: 0.5)
         segmentedView.delegate = self
         segmentedView.dataSource = dataSource
         segmentedView.isContentScrollViewClickTransitionAnimationEnabled = false
+        backgroundView.backgroundColor = UIColor.init(red: 0/255, green: 217/255, blue: 135/255, alpha: 1)
+        backgroundView.addSubview(segmentedView)
+        segmentedView.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(UIApplication.shared.statusBarFrame.size.height);
+            make.leading.trailing.bottom.equalToSuperview()
+        }
         
         pagingView.mainTableView.gestureDelegate = self
         self.view.addSubview(pagingView)
@@ -67,6 +75,10 @@ class ECHomeViewController: ECRootViewController {
     
     func preferredPagingView() -> JXPagingView {
         return JXPagingView(delegate: self)
+    }
+    
+    @objc private func selectAction() {
+        
     }
 
 }
@@ -82,11 +94,11 @@ extension ECHomeViewController: JXPagingViewDelegate {
     }
 //    PinSectionHeader 存放title的view
     func heightForPinSectionHeader(in pagingView: JXPagingView) -> Int {
-        return 50
+        return pinHeaderHeight
     }
 
     func viewForPinSectionHeader(in pagingView: JXPagingView) -> UIView {
-        return segmentedView
+        return backgroundView
     }
     
     func pagingView(_ pagingView: JXPagingView, initListAtIndex index: Int) -> JXPagingViewListViewDelegate {

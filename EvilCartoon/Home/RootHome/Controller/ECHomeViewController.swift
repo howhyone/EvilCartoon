@@ -17,7 +17,7 @@ class ECHomeViewController: ECRootViewController {
 
     public let pinHeaderHeight: Int = 100
 
-    lazy var pagingView: JXPagingView = preferredPagingView()
+    lazy var pagingView: JXPagingListRefreshView = JXPagingListRefreshView(delegate: self)
     lazy var dataSource: JXSegmentedTitleDataSource = JXSegmentedTitleDataSource()
     lazy var segmentedView: JXSegmentedView = JXSegmentedView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width - 120, height: CGFloat(40)))
     lazy var backgroundView: UIView = UIView.init()
@@ -52,6 +52,7 @@ class ECHomeViewController: ECRootViewController {
         }
     }
     
+    /// setupView
     func setupView() {
         self.view.backgroundColor = .white
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_search"), style: .plain, target: self, action: #selector(selectAction))
@@ -71,10 +72,6 @@ class ECHomeViewController: ECRootViewController {
         pagingView.mainTableView.gestureDelegate = self
         self.view.addSubview(pagingView)
         segmentedView.listContainer = pagingView.listContainerView
-    }
-    
-    func preferredPagingView() -> JXPagingView {
-        return JXPagingView(delegate: self)
     }
     
     @objc private func selectAction() {

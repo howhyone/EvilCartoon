@@ -1,5 +1,7 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '9.0'
+
+typed
 
 target 'EvilCartoon' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -9,6 +11,7 @@ target 'EvilCartoon' do
   pod 'Then'
   pod 'Moya'
   pod 'HandyJSON'
+  pod 'Result', '~> 5.0'
   pod 'Kingfisher'
   pod 'Reusable'
   pod 'LLCycleScrollView'
@@ -24,6 +27,7 @@ target 'EvilCartoon' do
   target 'EvilCartoonTests' do
     inherit! :search_paths
     # Pods for testing
+    
   end
 
   target 'EvilCartoonUITests' do

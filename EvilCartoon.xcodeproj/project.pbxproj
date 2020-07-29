@@ -33,6 +33,16 @@
 		542BF28524A0CEF500C75FD1 /* ECRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BF28424A0CEF500C75FD1 /* ECRootViewController.swift */; };
 		542BF28624A0CEF500C75FD1 /* ECRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BF28424A0CEF500C75FD1 /* ECRootViewController.swift */; };
 		542BF28724A0CEF500C75FD1 /* ECRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BF28424A0CEF500C75FD1 /* ECRootViewController.swift */; };
+		54883D2024C688C90049F1B2 /* ECRecommendReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54883D1F24C688C90049F1B2 /* ECRecommendReusableHeaderView.swift */; };
+		54883D2224C6D4A30049F1B2 /* UAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54883D2124C6D4A30049F1B2 /* UAPI.swift */; };
+		54883D2424C6D6940049F1B2 /* ECRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54883D2324C6D6940049F1B2 /* ECRecommendModel.swift */; };
+		54A8ADA624CEA985009E3ACA /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E0665E24C5B01B00236855 /* Global.swift */; };
+		54A8ADA724CEA98B009E3ACA /* UAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54883D2124C6D4A30049F1B2 /* UAPI.swift */; };
+		54A8ADB524CEAB24009E3ACA /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A8ADB424CEAB24009E3ACA /* libOCMock.a */; };
+		54E0665D24C5AFFF00236855 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E0665C24C5AFFF00236855 /* UIColorExtension.swift */; };
+		54E0665F24C5B01B00236855 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E0665E24C5B01B00236855 /* Global.swift */; };
+		54FF6D9824C072B400526D04 /* ECBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FF6D9724C072B400526D04 /* ECBaseCollectionViewCell.swift */; };
+		54FF6D9A24C0733000526D04 /* ECRecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FF6D9924C0733000526D04 /* ECRecommendCell.swift */; };
 		5AC0553BFA2F2631034C299C /* Pods_EvilCartoon_EvilCartoonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37211A7579DE7775CCE601A8 /* Pods_EvilCartoon_EvilCartoonUITests.framework */; };
 		73DB277853C61D266FFABF12 /* Pods_EvilCartoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A920D557EEE7FD9655DCB7 /* Pods_EvilCartoon.framework */; };
 		EC779ACC3DAAC1F31B619238 /* Pods_EvilCartoonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924B4DA928F5119A018BB0FF /* Pods_EvilCartoonTests.framework */; };
@@ -79,7 +89,23 @@
 		542A56942493A59B00657661 /* EvilCartoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvilCartoonUITests.swift; sourceTree = "<group>"; };
 		542A56962493A59C00657661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		542BF28424A0CEF500C75FD1 /* ECRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECRootViewController.swift; sourceTree = "<group>"; };
+		54883D1F24C688C90049F1B2 /* ECRecommendReusableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECRecommendReusableHeaderView.swift; sourceTree = "<group>"; };
+		54883D2124C6D4A30049F1B2 /* UAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAPI.swift; sourceTree = "<group>"; };
+		54883D2324C6D6940049F1B2 /* ECRecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECRecommendModel.swift; sourceTree = "<group>"; };
+		54A8ADAB24CEAB24009E3ACA /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		54A8ADAC24CEAB24009E3ACA /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		54A8ADAD24CEAB24009E3ACA /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		54A8ADAE24CEAB24009E3ACA /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		54A8ADAF24CEAB24009E3ACA /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		54A8ADB024CEAB24009E3ACA /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		54A8ADB124CEAB24009E3ACA /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		54A8ADB224CEAB24009E3ACA /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		54A8ADB424CEAB24009E3ACA /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		54B0EFCC24AF4ECD00771D98 /* EvilCartoon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EvilCartoon-Bridging-Header.h"; sourceTree = "<group>"; };
+		54E0665C24C5AFFF00236855 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		54E0665E24C5B01B00236855 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		54FF6D9724C072B400526D04 /* ECBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		54FF6D9924C0733000526D04 /* ECRecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECRecommendCell.swift; sourceTree = "<group>"; };
 		5871D2BDF20FA53A5E8A22CC /* Pods-EvilCartoon-EvilCartoonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvilCartoon-EvilCartoonUITests.debug.xcconfig"; path = "Target Support Files/Pods-EvilCartoon-EvilCartoonUITests/Pods-EvilCartoon-EvilCartoonUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		91576F3DCA6CF4C7851DA19C /* Pods-EvilCartoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvilCartoon.release.xcconfig"; path = "Target Support Files/Pods-EvilCartoon/Pods-EvilCartoon.release.xcconfig"; sourceTree = "<group>"; };
 		924B4DA928F5119A018BB0FF /* Pods_EvilCartoonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvilCartoonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC779ACC3DAAC1F31B619238 /* Pods_EvilCartoonTests.framework in Frameworks */,
+				54A8ADB524CEAB24009E3ACA /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +156,7 @@
 			children = (
 				540D57A9249A380000FB511A /* ECRootTabBarController.swift */,
 				542BF28424A0CEF500C75FD1 /* ECRootViewController.swift */,
+				54FF6D9724C072B400526D04 /* ECBaseCollectionViewCell.swift */,
 			);
 			path = RootController;
 			sourceTree = "<group>";
@@ -211,6 +239,7 @@
 		542A56882493A59B00657661 /* EvilCartoonTests */ = {
 			isa = PBXGroup;
 			children = (
+				54A8ADA824CEAB24009E3ACA /* usr */,
 				542A56892493A59B00657661 /* EvilCartoonTests.swift */,
 				542A568B2493A59B00657661 /* Info.plist */,
 			);
@@ -280,6 +309,7 @@
 		542BF28E24A0D06400C75FD1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				54883D2324C6D6940049F1B2 /* ECRecommendModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,6 +317,8 @@
 		542BF28F24A0D06C00C75FD1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				54FF6D9924C0733000526D04 /* ECRecommendCell.swift */,
+				54883D1F24C688C90049F1B2 /* ECRecommendReusableHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -423,12 +455,63 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		54A8ADA824CEAB24009E3ACA /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				54A8ADA924CEAB24009E3ACA /* include */,
+				54A8ADB324CEAB24009E3ACA /* lib */,
+			);
+			path = usr;
+			sourceTree = "<group>";
+		};
+		54A8ADA924CEAB24009E3ACA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				54A8ADAA24CEAB24009E3ACA /* OCMock */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		54A8ADAA24CEAB24009E3ACA /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				54A8ADAB24CEAB24009E3ACA /* OCMockObject.h */,
+				54A8ADAC24CEAB24009E3ACA /* OCMMacroState.h */,
+				54A8ADAD24CEAB24009E3ACA /* OCMock.h */,
+				54A8ADAE24CEAB24009E3ACA /* NSNotificationCenter+OCMAdditions.h */,
+				54A8ADAF24CEAB24009E3ACA /* OCMockRecorder.h */,
+				54A8ADB024CEAB24009E3ACA /* OCMLocation.h */,
+				54A8ADB124CEAB24009E3ACA /* OCMConstraint.h */,
+				54A8ADB224CEAB24009E3ACA /* OCMArg.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		54A8ADB324CEAB24009E3ACA /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				54A8ADB424CEAB24009E3ACA /* libOCMock.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		54B0EFCA24AF4CAF00771D98 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				54E0665924C5AF2400236855 /* Extension */,
 				54B0EFCC24AF4ECD00771D98 /* EvilCartoon-Bridging-Header.h */,
+				54E0665E24C5B01B00236855 /* Global.swift */,
+				54883D2124C6D4A30049F1B2 /* UAPI.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		54E0665924C5AF2400236855 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				54E0665C24C5AFFF00236855 /* UIColorExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		640B817CB3955088FBE8562B /* Pods */ = {
@@ -474,6 +557,7 @@
 				542A56812493A59B00657661 /* Sources */,
 				542A56822493A59B00657661 /* Frameworks */,
 				542A56832493A59B00657661 /* Resources */,
+				BEE1F3590414EBD3363CACBB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -653,6 +737,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BEE1F3590414EBD3363CACBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EvilCartoonTests/Pods-EvilCartoonTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EvilCartoonTests/Pods-EvilCartoonTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EvilCartoonTests/Pods-EvilCartoonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EEF75C0C794727547A050649 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -682,14 +783,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54FF6D9A24C0733000526D04 /* ECRecommendCell.swift in Sources */,
 				540D57AA249A380000FB511A /* ECRootTabBarController.swift in Sources */,
 				540D57B2249A38FB00FB511A /* ECHomeViewController.swift in Sources */,
+				54883D2424C6D6940049F1B2 /* ECRecommendModel.swift in Sources */,
+				54883D2224C6D4A30049F1B2 /* UAPI.swift in Sources */,
+				54FF6D9824C072B400526D04 /* ECBaseCollectionViewCell.swift in Sources */,
 				540D57BA249A393500FB511A /* ECBookshelfViewController.swift in Sources */,
 				5418966624AB5E38007F19C5 /* ECRecommendViewController.swift in Sources */,
 				542A56732493A59800657661 /* AppDelegate.swift in Sources */,
 				542BF28524A0CEF500C75FD1 /* ECRootViewController.swift in Sources */,
+				54E0665F24C5B01B00236855 /* Global.swift in Sources */,
 				540D57B6249A390E00FB511A /* ECCategoryViewController.swift in Sources */,
 				540D57BE249A395200FB511A /* ECMineViewController.swift in Sources */,
+				54E0665D24C5AFFF00236855 /* UIColorExtension.swift in Sources */,
+				54883D2024C688C90049F1B2 /* ECRecommendReusableHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,6 +813,8 @@
 				542BF28624A0CEF500C75FD1 /* ECRootViewController.swift in Sources */,
 				540D57AB249A380000FB511A /* ECRootTabBarController.swift in Sources */,
 				540D57BF249A395200FB511A /* ECMineViewController.swift in Sources */,
+				54A8ADA724CEA98B009E3ACA /* UAPI.swift in Sources */,
+				54A8ADA624CEA985009E3ACA /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -869,16 +979,18 @@
 			baseConfigurationReference = 3F1D5C0BE402D76706920D90 /* Pods-EvilCartoon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9667A46C8L;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Z2K494VF76;
 				INFOPLIST_FILE = EvilCartoon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.howhyone.EvilCartoon;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fdzq.ForthrightSecurities-Dev2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.fdzq.ForthrightSecurities-Dev2";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/EvilCartoon/Utils/EvilCartoon-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -890,16 +1002,18 @@
 			baseConfigurationReference = 91576F3DCA6CF4C7851DA19C /* Pods-EvilCartoon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9667A46C8L;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 78A9ZU354J;
 				INFOPLIST_FILE = EvilCartoon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.howhyone.EvilCartoon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fdzq.ForthrightSecurities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore *";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/EvilCartoon/Utils/EvilCartoon-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -914,12 +1028,99 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9667A46C8L;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/EmptyDataSet-Swift/EmptyDataSet_Swift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/HMSegmentedControl/HMSegmentedControl.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/HandyJSON/HandyJSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JXPagingView/JXPagingView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JXSegmentedView/JXSegmentedView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher/Kingfisher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/LLCycleScrollView/LLCycleScrollView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya/Moya.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result/Result.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reusable/Reusable.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKitExtend/SnapKitExtend.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Then/Then.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/UINavigation-SXFixSpace/UINavigation_SXFixSpace.framework/Headers\"",
+					"$(PROJECT_DIR)/usr/include",
+				);
 				INFOPLIST_FILE = EvilCartoonTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EvilCartoonTests/usr/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"EmptyDataSet_Swift\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"HMSegmentedControl\"",
+					"-framework",
+					"\"HandyJSON\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"JXPagingView\"",
+					"-framework",
+					"\"JXSegmentedView\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"LLCycleScrollView\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Moya\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"Reusable\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SnapKitExtend\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"Then\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UINavigation_SXFixSpace\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.howhyone.EvilCartoonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -937,12 +1138,99 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9667A46C8L;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/EmptyDataSet-Swift/EmptyDataSet_Swift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/HMSegmentedControl/HMSegmentedControl.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/HandyJSON/HandyJSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JXPagingView/JXPagingView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JXSegmentedView/JXSegmentedView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher/Kingfisher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/LLCycleScrollView/LLCycleScrollView.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MJRefresh/MJRefresh.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya/Moya.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result/Result.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reusable/Reusable.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKitExtend/SnapKitExtend.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Then/Then.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/UINavigation-SXFixSpace/UINavigation_SXFixSpace.framework/Headers\"",
+					"$(PROJECT_DIR)/usr/include",
+				);
 				INFOPLIST_FILE = EvilCartoonTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EvilCartoonTests/usr/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"EmptyDataSet_Swift\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"HMSegmentedControl\"",
+					"-framework",
+					"\"HandyJSON\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"JXPagingView\"",
+					"-framework",
+					"\"JXSegmentedView\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"LLCycleScrollView\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Moya\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"Reusable\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SnapKitExtend\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"Then\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UINavigation_SXFixSpace\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.howhyone.EvilCartoonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

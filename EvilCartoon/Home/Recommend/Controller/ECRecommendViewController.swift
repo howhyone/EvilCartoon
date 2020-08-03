@@ -23,6 +23,8 @@ class ECRecommendViewController: ECRootViewController {
     fileprivate let bannerViewHeigh: CGFloat = screenWidth * 0.467
     let interItemSpacing: CGFloat = 8
     let sectionHeaderHeight: CGFloat = 44
+    let sectionFooterHeight: CGFloat = 10
+
     var sexType: Int = UserDefaults.standard.integer(forKey: String.sexTypeKey)
     
     
@@ -54,7 +56,9 @@ class ECRecommendViewController: ECRootViewController {
         recommendCV.delegate = self
         recommendCV.dataSource = self
         recommendCV.register(ECRecommendCell.self, forCellWithReuseIdentifier: ECRecommendCell.description())
+        recommendCV.register(ECRecommendTypeCell.self, forCellWithReuseIdentifier: ECRecommendTypeCell.description())
         recommendCV.register(ECRecommendReusableHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: NSStringFromClass(ECRecommendReusableHeaderView.self))
+        recommendCV.register(ECRecommendReusableFooterView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: ECRecommendReusableFooterView.description())
         recommendCV.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
             self.loadDataSource(requestType: .requestTypeInit)
         })
@@ -113,7 +117,7 @@ class ECRecommendViewController: ECRootViewController {
     
 }
 
-/// UICollectionViewDelegate && UICollectionViewDataSource && UICollectionViewDelegateFlowLayout
+//MARK: -----------  UICollectionViewDelegate && UICollectionViewDataSource && UICollectionViewDelegateFlowLayout
 extension ECRecommendViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let comicList = comicLists[section]
@@ -123,9 +127,9 @@ extension ECRecommendViewController: UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let comicList = comicLists[indexPath.section]
         
-        let cell: ECRecommendCell = collectionView.dequeueReusableCell(withReuseIdentifier: ECRecommendCell.description(), for: indexPath) as! ECRecommendCell
         
        if comicList.comicType == .billboard {
+            let cell: ECRecommendTypeCell = collectionView.dequeueReusableCell(withReuseIdentifier: ECRecommendTypeCell.description(), for: indexPath) as! ECRecommendTypeCell
             cell.model = comicList.comics?[indexPath.row]
             return cell
         }else {
@@ -134,6 +138,8 @@ extension ECRecommendViewController: UICollectionViewDelegate, UICollectionViewD
             } else {
 //                cell.style = .withTitieAndDesc
             }
+            let cell: ECRecommendCell = collectionView.dequeueReusableCell(withReuseIdentifier: ECRecommendCell.description(), for: indexPath) as! ECRecommendCell
+
             cell.model = comicList.comics?[indexPath.row]
             return cell
         }
@@ -144,21 +150,26 @@ extension ECRecommendViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        if kind == UICollectionView.elementKindSectionHeader  {
+        if kind == UICollectionView.elementKindSectionHeader {
             let reusableHeaderView: ECRecommendReusableHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: NSStringFromClass(ECRecommendReusableHeaderView.self), for: indexPath) as! ECRecommendReusableHeaderView
-            
+            reusableHeaderView.model = comicLists[indexPath.section]
             return reusableHeaderView
+        } else {
+            let reusableFooterView: ECRecommendReusableFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: ECRecommendReusableFooterView.description(), for: indexPath) as! ECRecommendReusableFooterView
+            return reusableFooterView
         }
-        return UICollectionReusableView.init()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: screenWidth, height: sectionHeaderHeight)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return comicLists.count - 1 != section ? CGSize(width: screenWidth, height: sectionFooterHeight) : CGSize.zero
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView == recommendCollectinView {
-            print(scrollView.contentOffset.y)
             self.bannerView.snp.updateConstraints { (make) in
                 if #available(iOS 11, *) {
                     make.top.equalTo(self.view.safeAreaLayoutGuide.snp.topMargin).offset(min(0, -(scrollView.contentOffset.y + bannerViewHeigh)))

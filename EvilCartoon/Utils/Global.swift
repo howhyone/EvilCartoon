@@ -30,11 +30,10 @@ extension String {
 
 extension KingfisherWrapper where Base: KFCrossPlatformImageView {
     @discardableResult
-    public func setImage(urlString: String?, placeholder: Placeholder? = UIImage(named: "normal_placeholder_h")) -> DownloadTask {
+    public func setImage(urlString: String? , placeholder: Placeholder? = UIImage(named: "normal_placeholder_h")) -> DownloadTask? {
         return setImage(with: URL(string: urlString ?? ""),
-                        placeholder: placeholder,
-                        options:[.transition(.fade(0.5))])!
-        
+                        placeholder: placeholder ?? UIImage(named: "normal_placeholder_h"),
+                        options:[.transition(.fade(0.5))])
     }
 }
 

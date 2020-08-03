@@ -7,12 +7,11 @@
 //
 
 import UIKit
-
+/**漫画的cell*/
 class ECRecommendCell: ECBaseCollectionViewCell {
     
     private lazy var coverView: UIImageView = {
         let coverView = UIImageView()
-        coverView.backgroundColor = UIColor.green
         coverView.contentMode = .scaleAspectFill
         coverView.clipsToBounds = true
         return coverView
@@ -80,14 +79,95 @@ class ECRecommendCell: ECBaseCollectionViewCell {
             guard let model = model  else {
                 return
             }
-//            coverView.kf.setImage(with: URL(string: model.cover ?? ""), placeholder: nil, options: [.transition(.fade(0.5))], progressBlock: nil, completionHandler: nil)
-            coverView.kf.setImage(with: URL(string: model.cover ?? ""))
-            coverView.kf.setImage(with: <#T##Resource?#>, placeholder: <#T##Placeholder?#>, options: <#T##KingfisherOptionsInfo?#>, progressBlock: <#T##DownloadProgressBlock?##DownloadProgressBlock?##(Int64, Int64) -> Void#>, completionHandler: <#T##((Result<RetrieveImageResult, KingfisherError>) -> Void)?##((Result<RetrieveImageResult, KingfisherError>) -> Void)?##(Result<RetrieveImageResult, KingfisherError>) -> Void#>)
+            coverView.kf.setImage(urlString: model.cover, placeholder: nil)
             descLabel.text = model.subTitle ?? "更新至\(model.content ?? "0")集"
             titleLabel.text = model.name ?? model.title
         }
     }
     
+}
+
+// 漫画类型cell
+protocol ECRecommendTypeCellDelegate: class {
+    func clickMoreAction(_ recommendTypeCell: ECRecommendTypeCell, moreAction button: UIButton)
+}
+
+typealias ECRecommendTypeCellClosure = () -> Void
+
+class ECRecommendTypeCell: ECBaseCollectionViewCell {
+    weak var delegate: ECRecommendTypeCellDelegate?
+    private var moreActionClosure: ECRecommendTypeCellClosure?
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setupView()
+    }
     
+    func setupView() {
+        self.addSubview(iconImageView)
+        self.addSubview(titleLabel)
+        self.addSubview(moreBtn)
+        
+        iconImageView.snp.makeConstraints { (make) in
+            make.left.equalToSuperview().offset(scaleScreen * 5)
+            make.centerY.equalToSuperview()
+            make.width.height.equalTo(40 * scaleScreen)
+        }
+        titleLabel.snp.makeConstraints { (make) in
+            make.left.equalTo(iconImageView.snp.right).offset(scaleScreen * 5)
+            make.centerY.equalTo(iconImageView)
+            make.width.equalTo(200 * scaleScreen)
+        }
+        moreBtn.snp.makeConstraints { (make) in
+            make.top.right.bottom.equalToSuperview()
+            make.width.equalTo(40 * scaleScreen)
+        }
+    }
     
+    //MARK: ----------- setModel
+    var model:ComicModel? {
+        didSet {
+            guard let model = model else {
+                return
+            }
+            iconImageView.kf.setImage(urlString: model.cover, placeholder: nil)
+            titleLabel.text = model.name
+        }
+    }
+    
+
+    @objc func clickMoreAction(button: UIButton) {
+        delegate?.clickMoreAction(self, moreAction: button)
+        guard let closure = moreActionClosure  else {
+            return
+        }
+        closure()
+    }
+    
+    //MARK: ----------- lazyLoad
+     private lazy var iconImageView: UIImageView = {
+           let iconImageView: UIImageView = UIImageView()
+           iconImageView.contentMode = .scaleAspectFill
+           return iconImageView
+       }()
+       
+       private lazy var titleLabel: UILabel = {
+           let titleLabel: UILabel = UILabel()
+           titleLabel.font = UIFont.systemFont(ofSize: 14)
+           titleLabel.textColor = UIColor.black
+           titleLabel.textAlignment = .left
+           return titleLabel
+       }()
+       
+       private lazy var moreBtn: UIButton = {
+           let moreBtn = UIButton(type: .system)
+           moreBtn.setTitle("•••", for: .normal)
+           moreBtn.setTitleColor(UIColor.lightGray, for: .normal)
+           moreBtn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+           moreBtn.addTarget(self, action: #selector(clickMoreAction), for: .touchUpInside)
+           return moreBtn
+       }()
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

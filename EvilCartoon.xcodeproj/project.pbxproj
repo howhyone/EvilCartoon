@@ -39,6 +39,7 @@
 		54A8ADA624CEA985009E3ACA /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E0665E24C5B01B00236855 /* Global.swift */; };
 		54A8ADA724CEA98B009E3ACA /* UAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54883D2124C6D4A30049F1B2 /* UAPI.swift */; };
 		54A8ADB524CEAB24009E3ACA /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A8ADB424CEAB24009E3ACA /* libOCMock.a */; };
+		54D3A71824D831BF008BE48F /* ECRecommendReusableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D3A71724D831BF008BE48F /* ECRecommendReusableFooterView.swift */; };
 		54E0665D24C5AFFF00236855 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E0665C24C5AFFF00236855 /* UIColorExtension.swift */; };
 		54E0665F24C5B01B00236855 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E0665E24C5B01B00236855 /* Global.swift */; };
 		54FF6D9824C072B400526D04 /* ECBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FF6D9724C072B400526D04 /* ECBaseCollectionViewCell.swift */; };
@@ -102,6 +103,7 @@
 		54A8ADB224CEAB24009E3ACA /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
 		54A8ADB424CEAB24009E3ACA /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		54B0EFCC24AF4ECD00771D98 /* EvilCartoon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EvilCartoon-Bridging-Header.h"; sourceTree = "<group>"; };
+		54D3A71724D831BF008BE48F /* ECRecommendReusableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECRecommendReusableFooterView.swift; sourceTree = "<group>"; };
 		54E0665C24C5AFFF00236855 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		54E0665E24C5B01B00236855 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		54FF6D9724C072B400526D04 /* ECBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECBaseCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 			children = (
 				54FF6D9924C0733000526D04 /* ECRecommendCell.swift */,
 				54883D1F24C688C90049F1B2 /* ECRecommendReusableHeaderView.swift */,
+				54D3A71724D831BF008BE48F /* ECRecommendReusableFooterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -788,6 +791,7 @@
 				540D57B2249A38FB00FB511A /* ECHomeViewController.swift in Sources */,
 				54883D2424C6D6940049F1B2 /* ECRecommendModel.swift in Sources */,
 				54883D2224C6D4A30049F1B2 /* UAPI.swift in Sources */,
+				54D3A71824D831BF008BE48F /* ECRecommendReusableFooterView.swift in Sources */,
 				54FF6D9824C072B400526D04 /* ECBaseCollectionViewCell.swift in Sources */,
 				540D57BA249A393500FB511A /* ECBookshelfViewController.swift in Sources */,
 				5418966624AB5E38007F19C5 /* ECRecommendViewController.swift in Sources */,

@@ -25,12 +25,9 @@ class ECHomeViewController: ECRootViewController {
     let headerHeigth: Int = 50;
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         setupView()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,7 +74,6 @@ class ECHomeViewController: ECRootViewController {
     @objc private func selectAction() {
         
     }
-
 }
 
 

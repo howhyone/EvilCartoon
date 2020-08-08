@@ -19,29 +19,24 @@ enum RequestType {
 }
 
 class ECRecommendViewController: ECRootViewController {
-    
+    // 定义常量
     fileprivate let bannerViewHeigh: CGFloat = screenWidth * 0.467
     let interItemSpacing: CGFloat = 8
     let sectionHeaderHeight: CGFloat = 44
     let sectionFooterHeight: CGFloat = 10
-
+    // 定义变量
     var sexType: Int = UserDefaults.standard.integer(forKey: String.sexTypeKey)
-    
-    
     var listViewDidScrollCallback: ((UIScrollView) -> ())?
-    
     private var galleryItemArr = [GalleryItemModel]()
     private var textItemArr = [TextItemModel]()
     /// cell的值
     private var comicLists = [ComicListModel]()
-    
     private var recomendModel: ECRecommendModel = ECRecommendModel()
-    
+    //MARK: ----------- lazyLoad
     private lazy var bannerView: LLCycleScrollView = {
         let bw = LLCycleScrollView()
         bw.backgroundColor = UIColor.white
         bw.autoScrollTimeInterval = 6;
-        
         return bw;
     }()
     /// 漫画的collectionView
@@ -115,6 +110,10 @@ class ECRecommendViewController: ECRootViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
 }
 
 //MARK: -----------  UICollectionViewDelegate && UICollectionViewDataSource && UICollectionViewDelegateFlowLayout
@@ -166,6 +165,12 @@ extension ECRecommendViewController: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         return comicLists.count - 1 != section ? CGSize(width: screenWidth, height: sectionFooterHeight) : CGSize.zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let comicVC: ECComicViewController = ECComicViewController.init()
+        comicVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(comicVC, animated: true)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

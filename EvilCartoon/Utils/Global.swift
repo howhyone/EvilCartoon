@@ -54,6 +54,7 @@ let screenWidth = UIScreen.main.bounds.width
 let screenHeight = UIScreen.main.bounds.height
 
 let scaleScreen = 375/screenWidth
+let navigationBarY = UIViewController().navigationController?.navigationBar.frame.maxY ?? 0
 
 /// 获取当前控制器
 var topVC: UIViewController? {

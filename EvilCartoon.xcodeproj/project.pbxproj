@@ -37,6 +37,7 @@
 		54883D2024C688C90049F1B2 /* ECRecommendReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54883D1F24C688C90049F1B2 /* ECRecommendReusableHeaderView.swift */; };
 		54883D2224C6D4A30049F1B2 /* UAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54883D2124C6D4A30049F1B2 /* UAPI.swift */; };
 		54883D2424C6D6940049F1B2 /* ECRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54883D2324C6D6940049F1B2 /* ECRecommendModel.swift */; };
+		548BF2D824E2BCCB00625E81 /* ECRootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548BF2D724E2BCCB00625E81 /* ECRootNavigationController.swift */; };
 		54A8ADA624CEA985009E3ACA /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E0665E24C5B01B00236855 /* Global.swift */; };
 		54A8ADA724CEA98B009E3ACA /* UAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54883D2124C6D4A30049F1B2 /* UAPI.swift */; };
 		54A8ADB524CEAB24009E3ACA /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A8ADB424CEAB24009E3ACA /* libOCMock.a */; };
@@ -96,6 +97,7 @@
 		54883D1F24C688C90049F1B2 /* ECRecommendReusableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECRecommendReusableHeaderView.swift; sourceTree = "<group>"; };
 		54883D2124C6D4A30049F1B2 /* UAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAPI.swift; sourceTree = "<group>"; };
 		54883D2324C6D6940049F1B2 /* ECRecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECRecommendModel.swift; sourceTree = "<group>"; };
+		548BF2D724E2BCCB00625E81 /* ECRootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECRootNavigationController.swift; sourceTree = "<group>"; };
 		54A8ADAB24CEAB24009E3ACA /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		54A8ADAC24CEAB24009E3ACA /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
 		54A8ADAD24CEAB24009E3ACA /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				540D57A9249A380000FB511A /* ECRootTabBarController.swift */,
 				542BF28424A0CEF500C75FD1 /* ECRootViewController.swift */,
 				54FF6D9724C072B400526D04 /* ECBaseCollectionViewCell.swift */,
+				548BF2D724E2BCCB00625E81 /* ECRootNavigationController.swift */,
 			);
 			path = RootController;
 			sourceTree = "<group>";
@@ -827,6 +830,7 @@
 				54FF6D9A24C0733000526D04 /* ECRecommendCell.swift in Sources */,
 				54CE201524DD727A00A4C708 /* ECComicDetailViewController.swift in Sources */,
 				540D57AA249A380000FB511A /* ECRootTabBarController.swift in Sources */,
+				548BF2D824E2BCCB00625E81 /* ECRootNavigationController.swift in Sources */,
 				540D57B2249A38FB00FB511A /* ECHomeViewController.swift in Sources */,
 				54883D2424C6D6940049F1B2 /* ECRecommendModel.swift in Sources */,
 				54883D2224C6D4A30049F1B2 /* UAPI.swift in Sources */,

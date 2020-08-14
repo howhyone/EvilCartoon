@@ -12,19 +12,29 @@ class ECRootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        configNavigationBar()
     }
-    */
+    
+    func configNavigationBar() {
+        guard let navi = navigationController else { return }
+        if navi.visibleViewController == self {
+            navi.barStyle(.theme)
+            navi.setNavigationBarHidden(false, animated: true)
+            if navi.viewControllers.count > 1 {
+                navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_back_white"), style: .plain, target: self, action: #selector(pressBack))
+            }
+        }
+    }
+    
+    @objc func pressBack() {
+        navigationController?.popViewController(animated: true)
+    }
+    
 
 }

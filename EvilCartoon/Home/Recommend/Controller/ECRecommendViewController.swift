@@ -126,12 +126,11 @@ extension ECRecommendViewController: UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let comicList = comicLists[indexPath.section]
         
-        
        if comicList.comicType == .billboard {
             let cell: ECRecommendTypeCell = collectionView.dequeueReusableCell(withReuseIdentifier: ECRecommendTypeCell.description(), for: indexPath) as! ECRecommendTypeCell
             cell.model = comicList.comics?[indexPath.row]
             return cell
-        }else {
+        } else {
             if comicList.comicType == .thematic {
 //                cell.style = .none
             } else {
@@ -168,7 +167,9 @@ extension ECRecommendViewController: UICollectionViewDelegate, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let comicVC: ECComicViewController = ECComicViewController.init()
+        let comicList = comicLists[indexPath.section]
+        let comicId: Int = comicList.comics?[indexPath.row].comicId ?? 0
+        let comicVC: ECComicViewController = ECComicViewController.init(commicId: comicId)
         comicVC.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(comicVC, animated: true)
     }

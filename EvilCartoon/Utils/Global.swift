@@ -54,9 +54,13 @@ let screenWidth = UIScreen.main.bounds.width
 let screenHeight = UIScreen.main.bounds.height
 
 let scaleScreen = 375/screenWidth
-let navigationBarY = UIViewController().navigationController?.navigationBar.frame.maxY ?? 0
-let statusBarHeight = UIApplication.shared.statusBarFrame.size.height 
+let statusBarHeight = UIApplication.shared.statusBarFrame.size.height
 let navigationBarHeight = UIViewController().navigationController?.navigationBar.frame.size.height ?? 44
+let navigationStatusBarHeight = statusBarHeight + navigationBarHeight
+
+func adaptor(amount: CGFloat) -> CGFloat {
+    return ceil(amount * screenWidth / 375) 
+}
 
 /// 获取当前控制器
 var topVC: UIViewController? {

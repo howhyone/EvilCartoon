@@ -9,12 +9,18 @@
 import UIKit
 import JXSegmentedView
 import JXPagingView
+import HandyJSON
+import Moya
+
 class ECComicViewController: ECRootViewController {
     //MARK: ----------- 初始化参数
     var titleArr = ["详情", "目录", "讨论"]
-    let headerHeight: Int = Int(navigationBarY) + 150
+    let headerHeight: Int = Int(navigationStatusBarHeight) + 150
     let pinSectionHeaderHeight = 30
     var hegiths: CGFloat = 0;
+    private var comicId: Int = 0
+    private var detailStatic: DetailStaticModel?
+    private var detailRealtime: DetailRealtimeModel?
     
     //MARK: ----------- lazyLoad
     private lazy var segmentedView:  JXSegmentedView = {
@@ -50,24 +56,30 @@ class ECComicViewController: ECRootViewController {
         return indicatorView
     }()
     
-    private lazy var headerView: UIView = {
-        let headerView = UIView.init()
+    private lazy var headerView: ECComicHeaderView = {
+        let headerView = ECComicHeaderView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: navigationStatusBarHeight + 150))
         headerView.backgroundColor = .green
         return headerView
     }()
 
     // MARK: ----------- viewDidLoad
+    convenience init(commicId: Int) {
+        self.init()
+        self.comicId = commicId;
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        hegiths = self.navigationController!.navigationBar.frame.size.height;
 
         self.setupView()
         
-        hegiths = self.navigationController!.navigationBar.frame.size.height;
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController? .setNavigationBarHidden(false, animated: true)
+        handleHttpRequest()
     }
     
     override func viewDidLayoutSubviews() {
@@ -82,6 +94,29 @@ class ECComicViewController: ECRootViewController {
             make.bottom.equalToSuperview()
             make.trailing.leading.equalToSuperview()
         }
+    }
+    
+    // MARK: -----------HtppRequest
+    func handleHttpRequest() {
+        let group = DispatchGroup()
+        group.enter()
+        ApiLoadingProvider.request(UApi.detailStatic(comicid: comicId), model: DetailStaticModel.self) { (detailStatic) in
+            self.detailStatic = detailStatic
+            self.headerView.detailStaticModel = detailStatic?.comic
+            
+            group.leave()
+        }
+        
+        group.enter()
+        ApiProvider.request(UApi.detailRealtime(comicid: comicId), model: DetailRealtimeModel.self) { [weak self] (returnData) in
+            self?.detailRealtime = returnData
+            self?.headerView.detailRealtime = returnData?.comic
+            
+            group.leave()
+        }
+        
+        group.enter()
+//        ApiProvider.request(UApi.guessLike, model: guesslickmo, completion: <#T##((HandyJSON?) -> Void)?##((HandyJSON?) -> Void)?##(HandyJSON?) -> Void#>)
     }
     
     override func configNavigationBar() {
@@ -122,15 +157,22 @@ extension ECComicViewController: JXPagingViewDelegate {
     
     func pagingView(_ pagingView: JXPagingView, initListAtIndex index: Int) -> JXPagingViewListViewDelegate {
         let comicDetailVC: ECComicDetailViewController = ECComicDetailViewController()
+        comicDetailVC.delegate = self;
         return comicDetailVC
     }
         
     func mainTableViewDidScroll(_ scrollView: UIScrollView) {
-         let alphaL = scrollView.contentOffset.y / (CGFloat(headerHeight) - statusBarHeight - navigationBarHeight)
+         let alphaL = scrollView.contentOffset.y / (CGFloat(Int(navigationStatusBarHeight) + 150) - statusBarHeight - navigationBarHeight)
         self.navigationController?.barStyle(.theme)
         self.navigationController?.navigationBar.alpha = alphaL
         self.navigationItem.title = "吃人"
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.black]
+    }
+}
+
+extension ECComicViewController: ECPagingScrollDelegate {
+    func pagingScrollToTop() {
+        self.pageView.mainTableView.contentOffset = .zero
     }
 }
 

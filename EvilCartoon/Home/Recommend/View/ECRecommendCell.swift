@@ -41,7 +41,7 @@ class ECRecommendCell: ECBaseCollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupView() {
+    override func setupView() {
         self.contentView.backgroundColor = .white
         self.contentView.addSubview(coverView)
         self.contentView.addSubview(titleLabel)
@@ -102,7 +102,7 @@ class ECRecommendTypeCell: ECBaseCollectionViewCell {
         self.setupView()
     }
     
-    func setupView() {
+    override func setupView() {
         self.addSubview(iconImageView)
         self.addSubview(titleLabel)
         self.addSubview(moreBtn)
